@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FE9505;
+}
+input{
+    font-size: medium !important;
+}
+button{
+    border-radius: 60%;
+    padding: 20px;
+    margin: 2px;
+    border: transparent;
+    
+}
+.sign{
+    background-color: #FE9505;
+    color: white;
+}
+.num{
+    background-color: #333333;
+    color: white;
+    width: 56px;
+}
+.num0{
+    background-color: #333333;
+    color: white;
+    width: 120px;
+    border-radius: 50px !important;
+}
+.clr{
+    background-color: #A5A5A5;
+    color: black;
+}
+.one{
+    margin: 30px;
+}

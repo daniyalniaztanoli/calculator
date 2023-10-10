@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="calculator" style="box-shadow: rgba(245, 120, 3, 0.25) 0px 54px 55px, rgba(255, 5, 5, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;padding-top: 30px; padding-bottom: 10px; padding-left: 5px; padding-right: 5px; border-radius: 20px ;background-color: rgb(2, 1, 1);">
+        <h1 style="text-align: center;color: white;">Calculator</h1>
+<input type="text" style="text-align: right;border: none;padding: 20px;font-size: 1em;background-color: black;color: white;" id="display" disabled placeholder="0">
+        <div class="oen">
+            <button class="clr" onclick="clearAll()" id="userInput">AC</button>
+            <button class="clr" onclick="clearOne()" id="userInput"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="clr" style="padding: 22px;" onclick="userButton('%')" id="userInput"><i class="fa-solid fa-percent"></i></button>
+            <button class="sign" onclick="userButton('/')" id="userInput"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="two">
+            <button class="num" onclick="userButton('7')" id="userInput">7</button>
+            <button class="num" onclick="userButton('8')" id="userInput">8</button>
+            <button class="num" onclick="userButton('9')" id="userInput">9</button>
+            <button class="sign" onclick="userButton('*')" id="userInput"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="three">
+            <button class="num" onclick="userButton('4')" id="userInput">4</button>
+            <button class="num" onclick="userButton('5')" id="userInput">5</button>
+            <button class="num" onclick="userButton('6')" id="userInput">6</button>
+            <button class="sign" onclick="userButton('-')" id="userInput"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="four">
+            <button class="num" onclick="userButton('1')" id="userInput">1</button>
+            <button class="num" onclick="userButton('2')" id="userInput">2</button>
+            <button class="num" onclick="userButton('3')" id="userInput">3</button>
+            <button class="sign" onclick="userButton('+')" id="userInput"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+       <div class="five">
+            <button class="num0" onclick="userButton('0')" id="userInput">0</button>
+            <button class="num" onclick="userButton('.')" id="userInput">.</button>
+            <button class="sign" onclick="calculateResult()"><i class="fa-solid fa-equals"></i></button>
+            
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
